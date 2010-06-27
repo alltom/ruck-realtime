@@ -30,7 +30,8 @@ Gem::Specification.new do |s|
      "bin/ruck_realtime",
      "examples/ex01.rb",
      "lib/ruck/realtime.rb",
-     "lib/ruck/realtime/ruck-realtime.rb"
+     "lib/ruck/realtime/ruck-realtime.rb",
+     "ruck-realtime.gemspec"
   ]
   s.homepage = %q{http://github.com/alltom/ruck-realtime}
   s.rdoc_options = ["--charset=UTF-8"]

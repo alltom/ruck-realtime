@@ -1,0 +1,9 @@
+
+A simple real-time shreduler for ruck based on Kernel#sleep.
+A shreduler shredules shreds (Ruck threads). See ruck's
+README for more information.
+
+  $ ruck_realtime script.rb
+
+ruck_realtime is a Ruby script that shows you how you might
+build a simple command-line interpreter with a custom shreduler.

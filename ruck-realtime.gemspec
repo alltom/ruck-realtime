@@ -17,13 +17,11 @@ Gem::Specification.new do |s|
   s.email = %q{tom@alltom.com}
   s.executables = ["ruck_realtime"]
   s.extra_rdoc_files = [
-    "LICENSE",
-     "README"
+    "README"
   ]
   s.files = [
     ".document",
      ".gitignore",
-     "LICENSE",
      "README",
      "Rakefile",
      "VERSION",

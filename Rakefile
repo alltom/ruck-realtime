@@ -14,7 +14,7 @@ begin
       too precise, but an example of how to write a simple shreduler.
     EOF
     gem.has_rdoc = false
-    gem.add_development_dependency "ruck", ">= 0"
+    gem.add_dependency "ruck", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

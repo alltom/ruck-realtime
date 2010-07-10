@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Lieber"]
-  s.date = %q{2010-06-27}
+  s.date = %q{2010-07-10}
   s.default_executable = %q{ruck_realtime}
   s.description = %q{      A simple real-time ruck shreduler based on Kernel#sleep. Not
       too precise, but an example of how to write a simple shreduler.
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<ruck>, [">= 0"])
+      s.add_runtime_dependency(%q<ruck>, [">= 0"])
     else
       s.add_dependency(%q<ruck>, [">= 0"])
     end

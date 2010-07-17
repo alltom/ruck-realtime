@@ -21,7 +21,7 @@ end
 filenames.each do |filename|
   SHREDULER.spork(filename) do
     include Ruck::RealTime::ShredLocal
-    require filename
+    load(filename, true)
   end
 end
 

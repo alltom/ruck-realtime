@@ -8,7 +8,8 @@ $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require "ruck"
 require "ruck/realtime"
 
-SHREDULER = Ruck::RealTime::RealTimeShreduler.new
+@shreduler = Ruck::RealTime::RealTimeShreduler.new
+@shreduler.make_convenient
 
 filenames = ARGV
 filenames.each do |filename|
@@ -19,10 +20,9 @@ filenames.each do |filename|
 end
 
 filenames.each do |filename|
-  SHREDULER.spork(filename) do
-    include Ruck::RealTime::ShredLocal
+  @shreduler.spork do
     load(filename, true)
   end
 end
 
-SHREDULER.run
+@shreduler.run

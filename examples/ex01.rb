@@ -1,13 +1,13 @@
-spork("a") do
+spork do |sh|
   loop do
-    wait 1
+    sh.yield 1
     puts "second"
   end
 end
 
-spork("b") do
+spork do |sh|
   loop do
-    wait 0.5
+    sh.yield 0.5
     puts "       half-second"
   end
 end

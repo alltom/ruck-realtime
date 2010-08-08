@@ -1,13 +1,15 @@
-spork do |sh|
+include Ruck
+
+spork do
   loop do
-    sh.yield 1
+    Shred.yield 1
     puts "second"
   end
 end
 
-spork do |sh|
+spork do
   loop do
-    sh.yield 0.5
+    Shred.yield 0.5
     puts "       half-second"
   end
 end

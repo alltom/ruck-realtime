@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ruck-realtime}
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Lieber"]
-  s.date = %q{2010-07-25}
+  s.date = %q{2010-08-15}
   s.default_executable = %q{ruck_realtime}
   s.description = %q{      A simple real-time ruck shreduler based on Kernel#sleep. Not
       too precise, but an example of how to write a simple shreduler.
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
      "bin/ruck_realtime",
      "examples/ex01.rb",
      "lib/ruck/realtime.rb",
-     "lib/ruck/realtime/ruck-realtime.rb",
+     "lib/ruck/realtime/real_time_shreduler.rb",
      "ruck-realtime.gemspec"
   ]
   s.homepage = %q{http://github.com/alltom/ruck-realtime}
